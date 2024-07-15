@@ -17,7 +17,7 @@ export class TrackerStorageInitializer {
                 },
                 body: JSON.stringify({chunk, options})
             });
-
+            
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);
             }
