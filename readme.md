@@ -21,11 +21,12 @@
 ## Usage
 - **.track()** accepts two parameters, the first one is your chunk object which you want to keep track of, and the second is an object of options
 
-try{
-    const res = await fetch(URL);
+
+ 		try{
+        	const res = await fetch(URL);
         	...
-}catch(err) {
-    TrackerStorage.track({error: err, meta:{occured: new Date()}},{name:"Error on fetching",type:"FAIL"})
-    /* other handling */
-}
+        }catch(err) {
+        	TrackerStorage.track({error: err, meta:{occured: new Date()}},{name:"Error on fetching",	type:"FAIL"})
+        	/* other handling */
+        }
 - **type**: **SUCCESS | FAIL | OTHER**, which will differentiate the objects on the dashboard
