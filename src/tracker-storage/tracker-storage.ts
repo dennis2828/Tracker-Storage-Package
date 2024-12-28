@@ -9,7 +9,7 @@ export class TrackerStorageInitializer {
 
     track = async (chunk: Record<string, any>, options: TrackerStorageChunkProps): Promise<TrackerStorageResponse> => {
         try{
-            const res = await fetch("ht tp://localhost:3000/api/track", {
+            const res = await fetch("https://tracker-storage.vercel.app/api/chunks", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

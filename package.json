@@ -1,19 +1,21 @@
 {
   "name": "tracker-storage",
-  "version": "0.0.1",
-  "description": "Tracker for any chunk you want.",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "homepage": "https://tracker-storage.vercel.app",
   "repository": {
-    "url": ""
+    "url": "https://github.com/dennisdingo28/Tracker-Storage-Package"
   },
   "scripts": {
     "build": "tsup"
   },
   "keywords": [
-    "track events",
+    "track",
+    "logs",
+    "errors",
+    "debug",
     "events"
   ],
   "author": "moldovan_dennis",
